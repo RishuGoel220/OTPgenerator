@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                             public void run() {
 
                                 TextView result= (TextView) findViewById(R.id.textView2);
-                                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+                                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmm");
                                 String currentDateandTime = sdf.format(new Date());
                                 result.setText(md5(currentDateandTime));
                             }
